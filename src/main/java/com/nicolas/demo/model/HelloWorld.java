@@ -9,8 +9,6 @@ public class HelloWorld {
    * ATTRIBUTS
    */
   private String value = "Hello World !"; // Valeur par défaut
-  @Autowired
-  private LivreService livreService = new LivreService();
     /*
    * CONSTRUCTEUR VIDE
    */
@@ -25,13 +23,6 @@ public class HelloWorld {
   }
   public void setValue(String value) {
     this.value = value;
-  }
-  // livreService
-  public LivreService getLivreService() {
-    return this.livreService;
-  }
-  public void setLivreService(LivreService livreService) {
-    this.livreService = livreService;
   }
     /*
    * ToString

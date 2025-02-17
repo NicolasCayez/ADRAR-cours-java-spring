@@ -1,13 +1,18 @@
 package com.nicolas.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.nicolas.demo.service.HelloWorldService;
+import com.nicolas.demo.service.LivreService;
 
 @SpringBootApplication
 public class CoursSpringApplication implements CommandLineRunner{
+
+	@Autowired
+	LivreService livreService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(CoursSpringApplication.class, args);
@@ -25,7 +30,7 @@ public class CoursSpringApplication implements CommandLineRunner{
     /*
    * EXERCICE 2 - Livre
    */
-		helloWorldService.getHelloWorld().getLivreService().add();
+		livreService.add();
 	}
 
 }
