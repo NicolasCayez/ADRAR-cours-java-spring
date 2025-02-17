@@ -23,7 +23,7 @@ public class CoursSpringApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) {
-	/*
+		/*
    * EXERCICE 1 - Hello World
    */
 		// getHelloWorld retourne l'objet et la méthode toString est appelée par défaut dans le print
