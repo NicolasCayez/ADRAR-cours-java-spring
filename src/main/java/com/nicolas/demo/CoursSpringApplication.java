@@ -11,8 +11,11 @@ import com.nicolas.demo.service.LivreService;
 @SpringBootApplication
 public class CoursSpringApplication implements CommandLineRunner{
 
+	//Autowired : instancie automatiquement
 	@Autowired
-	LivreService livreService;
+	private HelloWorldService helloWorldService;
+	@Autowired
+	private LivreService livreService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(CoursSpringApplication.class, args);
@@ -23,14 +26,13 @@ public class CoursSpringApplication implements CommandLineRunner{
 	/*
    * EXERCICE 1 - Hello World
    */
-    // On instancie un HelloWOrldService
-		HelloWorldService helloWorldService = new HelloWorldService();
 		// getHelloWorld retourne l'objet et la méthode toString est appelée par défaut dans le print
 		System.out.println(helloWorldService.getHelloWorld());
     /*
    * EXERCICE 2 - Livre
    */
-		livreService.add();
+		// livreService.add();
+		livreService.addToCollection();
 	}
 
 }

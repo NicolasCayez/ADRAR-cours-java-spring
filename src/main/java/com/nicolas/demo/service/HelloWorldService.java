@@ -7,9 +7,7 @@ import com.nicolas.demo.model.HelloWorld;
 @Component
 public class HelloWorldService {
   public HelloWorld getHelloWorld() {
-    // On instancie un HelloWorld
-    HelloWorld helloWorld = new HelloWorld();
-    // On retourne le HelloWorld
-    return helloWorld;
+    // On instancie et on retourne un HelloWorld
+    return new HelloWorld();
   }
 }
